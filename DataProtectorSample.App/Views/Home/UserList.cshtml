@@ -1,0 +1,11 @@
+﻿@model List<User>
+
+<h4>@ViewBag.Title</h4>
+
+@foreach(var @user in @Model){
+    <a asp-action="ShowUser" asp-route-timeless="@ViewBag.Timeless" asp-route-id="@user.EncrptedId">@user.Name - @user.Username</a> 
+    <hr />
+    
+
+
+}
